@@ -1,0 +1,160 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400&display=swap");
+
+main{
+    display:flex;
+    flex-direction:column;
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    font-family: "Open Sans";
+}
+
+#logo{
+    position: absolute;
+    height:4vw;
+    min-height:40px;
+    margin-left: 6vw;
+    margin-top: 6vh;
+}
+
+#mockup{
+    position: absolute;
+    height:30vw;
+    left:10vw;
+    margin-top: 30vh;
+}
+
+h1{
+    white-space: nowrap;
+    margin-left:60vw;
+    margin-right:auto;
+    margin-top:30vh;
+    width:25%;
+    color:white;
+    text-align:center;
+    font-family: "Poppins";
+}
+
+p{
+    margin-left:60vw;
+    width:25%;
+    min-width:300px;
+    color:white;
+    text-align:center;
+    font-size:1.3em;
+}
+
+button{
+    margin-left:68vw;
+    width:10%;
+    border-radius:20px;
+    color:hsl(257, 40%, 49%);
+    padding-top:1vh;
+    padding-bottom:1vh;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+    min-width:125px;
+}
+
+button:hover{
+    background-color:hsl(300, 69%, 71%);
+    color:white;
+    text-overflow:nowrap;
+}
+
+.social-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    width:25%;
+    position:absolute;
+    bottom:5%;
+    left:82%;
+}
+.social-container img{
+    max-width:50px;
+    filter: invert(100%);
+}
+
+@media only screen and (max-width: 985px) {
+
+    #logo{margin-top: 4vh;}
+
+    #mockup{
+       position:relative;
+       left:6vw;
+       width:70vw;
+       height:auto;
+       margin-top:10vh;
+       max-width:550px;
+    }
+
+    h1{margin-top:4vh; margin-left:25vw; width:44vw;}
+
+    p{margin-top:1vh; margin-left:10vw; width:76vw;}
+
+    button{
+        margin:auto;
+        margin-top:3vh;
+        width:30%;
+        border-radius:20px;
+        color:hsl(257, 40%, 49%);
+        padding-top:1.5vh;
+        padding-bottom:1.5vh;
+    }
+
+
+    .social-container{
+        width:50%;
+        position:absolute;
+        bottom:0%;
+        left:25%;
+        justify-content: space-evenly;
+    }
+
+    .social-container img{
+    min-width: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #logo{margin-top: 4vh;}
+
+    #mockup{
+       position:relative;
+       left:6vw;
+       width:80vw;
+       height:auto;
+       margin-top:15vh;
+    }
+
+    h1{margin-top:4vh; margin-left:auto; margin-right:auto; width:88vw;}
+
+    p{margin-top:0.5vh; margin-left:4vw; width:86vw; text-overflow:nowrap;}
+
+    button{
+        margin:auto;
+        margin-top:1vh;
+        width:50%;
+        border-radius:20px;
+        color:hsl(257, 40%, 49%);
+        padding-top:1.5vh;
+        padding-bottom:1vh;
+        margin-bottom:5vh;
+        }
+
+    .social-container{
+        width:50%;
+        position:absolute;
+        bottom:3%;
+        left:25%;
+    }
+        .social-container img{
+            width: 40px;
+        }
+
+}
